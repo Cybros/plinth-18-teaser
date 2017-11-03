@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+<body>
+
+	<nav class="navbar navbar-toggleable-md fixed-top navbar-light nav">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">.</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color: white;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Organiser's Desk</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Committees</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Contact Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" style="color: white;">Plinth</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+
+	<div id="home">
+		<div class="logo container">
+			<img src="plinth-logo.png" height="70px" width="300px">
+			<div class="container">
+				<dir class="row">
+				<div class="col-md-4 mun-logo">
+					<img src="logo.png" height="120px" width="120px" style="border-radius: 50%">
+				</div>
+				<div class="col-md-8 heading">
+					<h5>LNM Institute of Information Technology</h5>
+					<h1>Model United Nations</h1>
+					<h6>January 7th-8th</h6>
+				</div>	
+			</dir>
+			</div>	
+			<button type="button" class="btn btn-outline-secondary">Register Now</button>
+		</div>
+
+	</div>
+
+	<!-- ######### HOME END ######### -->
+	<!-- ###### ABOUT SECTION ######## -->
+
+<div class="about">
+	<div class="container">
+		   <h1 class="text-center heading-2">About</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat iaculis sagittis. Maecenas et bibendum
+                        eros. Mauris imperdiet diam luctus justo vestibulum, eu malesuada dolor tincidunt. Quisque ac nulla lorem.
+                        Integer placerat enim a mollis accumsan. Duis quam urna, molestie id lobortis et, gravida sit amet tellus.
+                        Nulla porta nisi sit amet vehicula condimentum. Cras semper mauris a odio ornare maximus. Nam id neque massa.
+                        Aliquam dignissim maximus finibus. Ut tincidunt massa et neque ornare consectetur.
+                    </p>
+                    <!-- <div class="well">
+                        <blockquote>
+                            <p>A word from the Secretary General of LNMIIT MUN Society. </p>
+                            <footer>Sec-Gen</footer>
+                        </blockquote>
+                    </div> -->
+                </div>
+                <div class="col-md-6">
+                    <img src="img3.png" alt="SecGen">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		$(window).scroll(function() {
+		    if ($(document).scrollTop() > 200) {
+		        $('.nav').addClass("hidden");
+		    } else {
+		        $('.nav').removeClass("hidden");
+		    }
+		});
+
+	});	
+</script>
+</body>
+</html>
