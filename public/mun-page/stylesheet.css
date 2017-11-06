@@ -19,6 +19,20 @@ body{
 	padding: 0px;
 }	
 
+.underline-1{
+  width: 100px;
+  background-color: 
+  white;height: 2px; 
+  opacity: .8;
+}
+
+.underline-2{
+  width: 50px;
+  background-color:white;
+  opacity: .5
+
+}
+
 .nav{
 
      background-color: transparent;
@@ -89,7 +103,9 @@ body{
 
      font-family: 'Tangerine', serif;
      font-size: 48px;
-     margin-bottom: 80px;
+     
+     color: white;
+     margin-top: -30px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -137,11 +153,19 @@ body{
           padding-bottom: 20px;
       }
 
+      #Committees h1{
+         font-family: 'Tangerine', serif;
+         font-size: 48px;
+         margin-bottom: 10px;
+         padding-top: 30px;
+         color: white;
+      }
+
       #carousel img {
         visibility:hidden; /* hide images until carousel can handle them */
         cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+        border:2px solid black;
       }
-
 
       .split-left {
         width:450px;
@@ -156,6 +180,13 @@ body{
         height:250px;
         overflow:scroll;
       }
-
+      #prev,#next{
+        background:rgba(0,0,0,0.6);
+        border: none;
+        transition: .7s;
+      }
+       #prev:hover,#next:hover{
+        background:rgba(0,0,0,0.9);
+      }
 
 /*################## End ##################*/     
