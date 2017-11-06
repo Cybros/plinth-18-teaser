@@ -133,10 +133,15 @@ a,i{
       }
 
       .card {
-        margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-}
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px; 
+      }
+
+      .mail,.add{
+        text-align: center;
+        padding-bottom: 15px;
+      }
 }
 
 /*################## carousel ##################*/
@@ -250,6 +255,18 @@ footer{
 .address{
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 780px){
+
+  .mail{
+    text-align: right;
+
+  }
+  .add{
+    text-align: left;
+
+}
 }
 
 .links{
