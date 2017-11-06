@@ -150,7 +150,7 @@ body{
       #Committees{
           background-color:#303030;
           text-align: center;
-          padding-bottom: 20px;
+          padding-bottom: 50px;
       }
 
       #Committees h1{
@@ -190,3 +190,42 @@ body{
       }
 
 /*################## End ##################*/     
+
+/*########### Executive Board ###################*/
+
+#board{
+
+  background-color:#303030;
+  padding-bottom: 40px;
+  padding-top: 50px;
+
+}
+
+#board a{
+
+  background:rgba(0,0,0,0.6);
+  border: none;
+  transition: .7s;
+  margin-top: 40px;
+
+}
+
+#board a:hover{
+  background:rgba(0,0,0,0.9);
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+
+  display: block;
+}
+
+.card{
+
+  margin-top: 50px;
+}
+
+/*########### END #################*/
