@@ -19,6 +19,10 @@ body{
 	padding: 0px;
 }	
 
+a,i{
+  transition: .3s;
+}
+
 .underline-1{
   width: 100px;
   background-color: 
@@ -128,6 +132,11 @@ body{
           text-align: left;
       }
 
+      .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
 }
 
 /*################## carousel ##################*/
@@ -150,7 +159,8 @@ body{
       #Committees{
           background-color:#303030;
           text-align: center;
-          padding-bottom: 50px;
+          padding-bottom: 100px;
+  
       }
 
       #Committees h1{
@@ -207,6 +217,7 @@ body{
   border: none;
   transition: .7s;
   margin-top: 40px;
+  margin-bottom: 100px;
 
 }
 
@@ -229,3 +240,46 @@ body{
 }
 
 /*########### END #################*/
+
+footer{
+  background-color: #303030;
+  color: white
+
+}
+
+.address{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.links{
+
+  background-color: black;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.links i{
+
+  margin: 20px 10px;
+}
+
+.links i:hover{
+
+  color: #7c7c7c;
+  cursor:pointer;
+}
+
+.links a{
+
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.links a:hover{
+
+  color: #7c7c7c;
+}
