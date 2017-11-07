@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bree+Serif">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/mun.css">
+	<link rel="stylesheet" href="css/flipster.min.css">
 
 </head>
 <body>
@@ -102,97 +103,84 @@
 	<h1 class="text-center heading-2">Committees</h1>
 	<hr class="underline-1">
 	<hr class="underline-2">
-    <div class="container" id="carousel">
-      <a data-target="#myModal" data-toggle="modal" href="#"><img src="img/mun/1.jpg" id="item-1" /></a>
-      <div tabindex="-1" class="modal fade" id="myModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        
-		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        ...1
-		      </div>
-		      <div class="modal-footer">
-		        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-		
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
 
-      <a data-target="#myModa2" data-toggle="modal" href="#"><img src="img/mun/2.jpg" id="item-2" /></a>
-      <div tabindex="-1" class="modal fade" id="myModa2" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        ...2
-		      </div>
-		      <div class="modal-footer">
-		        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-		
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-      <a data-target="#myModa3" data-toggle="modal" href="#"><img src="img/mun/3.jpg" id="item-3" /></a>
-      <div tabindex="-1" class="modal fade" id="myModa3" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        ...3
-		      </div>
-		      <div class="modal-footer">
-		        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-		
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-      <a data-target="#myModal4" data-toggle="modal" href="#"><img src="img/mun/4.jpg" id="item-4" /></a>
-      <div tabindex="-1" class="modal fade" id="myModal4" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        ...4
-		      </div>
-		      <div class="modal-footer">
-		        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-		
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-      <a data-target="#myModal5" data-toggle="modal" href="#"><img src="img/mun/5.jpg" id="item-5" /></a>
-      <div tabindex="-1" class="modal fade" id="myModal5" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        ...5
-		      </div>
-		      <div class="modal-footer">
-		        <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
-		
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-    </div>
-    <a class="btn btn-primary" href="#" id="prev">Prev</a> | <a class="btn btn-primary" href="#" id="next">Next</a>  
-</div>
+
+	<h2>Flipster Carousel</h2>
+	
+			<div id="carouel">
+					<ul class="flip-items">
+							<li id="unga">
+									<div class="card" style="width: 20rem;">
+											<img class="card-img-top" src="img/mun/1.jpg" alt="Card image cap">
+											<div class="card-block">
+												<h4 class="card-title">Card title</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a data-target="#myModal11" data-toggle="modal" href="#">	Launch demo modal</a>
+											
+											</div>
+										</div>
+									
+							</li>
+							<li id="unhrc">
+									<div class="card" style="width: 20rem;">
+											<img class="card-img-top" src="img/mun/2.jpg" alt="Card image cap">
+											<div class="card-block">
+												<h4 class="card-title">Card title</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										</div>
+							 </li>
+							<li id="loksabha">
+									<div class="card" style="width: 20rem;">
+											<img class="card-img-top" src="img/mun/3.jpg" alt="Card image cap">
+											<div class="card-block">
+												<h4 class="card-title">Card title</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										</div>
+							</li>
+							<li id="who">
+									<div class="card" style="width: 20rem;">
+											<img class="card-img-top" src="img/mun/4.jpg" alt="Card image cap">
+											<div class="card-block">
+												<h4 class="card-title">Card title</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										</div>
+							</li>
+							<li id="unodc">
+									<div class="card" style="width: 20rem;">
+											<img class="card-img-top" src="img/mun/5.jpg" alt="Card image cap">
+											<div class="card-block">
+												<h4 class="card-title">Card title</h4>
+												<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<a href="#" class="btn btn-primary">Go somewhere</a>
+											</div>
+										</div>
+							</li>				
+					</ul>
+			</div>
+	
+			<div tabindex="-1" class="modal fade" id="myModal11" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								
+								<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								...1
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+				
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
 
 <!-- ##################### END ########################### -->
 
@@ -316,7 +304,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="js/jquery.flipster.min.js"></script>
+	
     <script type="text/javascript">
     		
     	$("#showWho").click(function(){
@@ -350,7 +340,24 @@
 			
 		})
 
-
-    </script>
+					 $("#carouel").flipster({
+							style: 'carousel',
+							spacing: -0.5,
+							buttons:   true,
+							autoplay: 4000,
+							pauseOnHover: true,
+							click: true,
+							keyboard: true,
+							scrollwheel: true,
+							touch: true,
+							loop: true,
+							fadeIn: 400,
+							onItemSwitch: function(){
+								if($('.flipster__item--current')[0].id === 'who'){
+									console.log("");
+								}
+							},
+					});
+			</script>
 </body>
 </html>
