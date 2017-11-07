@@ -12,7 +12,8 @@ html {
 
 
 body{
-
+  
+  font-family: 'Bree Serif', serif;
 	position: relative;
 	background: none;
 	margin: 0px;
@@ -27,8 +28,8 @@ a,i{
 
 .underline-1{
   width: 100px;
-  background-color: 
-  white;height: 2px; 
+  background-color: white;
+  height: 2px; 
   opacity: .8;
 }
 
@@ -40,7 +41,7 @@ a,i{
 }
 
 .nav{
-
+  font-size: 24px;
      background-color: transparent;
      -webkit-transition: 1s; 
     transition: 1s;
