@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-example" data-offset="200">
 
 	<nav class="navbar navbar-toggleable-md fixed-top navbar-light nav">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -26,22 +26,22 @@
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#" >Home
+				<li class="nav-item">
+					<a class="nav-link page_scroll" href="#home" >Home
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" >About</a>
+					<a class="nav-link page_scroll" href="#about" >About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" >Organiser's Desk</a>
+					<a class="nav-link page_scroll" href="#Committees" >Committees</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" >Committees</a>
+					<a class="nav-link page_scroll" href="#board" >Organiser's Desk</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" >Contact Us</a>
+					<a class="nav-link page_scroll" href="#contant" >Contact Us</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#" >Plinth</a>
@@ -74,7 +74,7 @@
 	<!-- ######### HOME END ######### -->
 	<!-- ###### ABOUT SECTION ######## -->
 
-	<div class="about">
+	<div id="about" class="about">
 		<div class="container">
 			<h1 class="text-center heading-2">About</h1>
 			<hr class="underline-1">
@@ -311,7 +311,7 @@
 
 			<!-- ############## END ################## -->
 
-		<footer>
+		<footer id="contant">
 			<h1 class="text-center heading-2">Contact Us</h1>
 			<hr class="underline-1">
 			<hr class="underline-2">
@@ -360,81 +360,82 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script src="js/jquery.flipster.min.js"></script>
-
 		<script type="text/javascript">
+			 $("#carouel").flipster({
+                style: 'carousel',
+                spacing: -0.5,
+                buttons: true,
+                autoplay: 4000,
+                pauseOnHover: true,
+                scrollwheel: false,
+                click: true,
+                keyboard: true,
+                touch: true,
+                loop: true,
+                fadeIn: 400,
+                onItemSwitch: function () {
+                    if ($('.flipster__item--current')[0].id === 'unga') {
+                        $("#UNGA").addClass("show");
+                        $("#UNHRC").addClass("hide");
+                        $("#LOKSABHA").addClass("hide");
+                        $("#WHO").addClass("hide");
+                        $("#UNODC").addClass("hide");
+                        $("#UNGA").removeClass("hide");
+                        $("#UNHRC").removeClass("show");
+                        $("#LOKSABHA").removeClass("show");
+                        $("#WHO").removeClass("show");
+                        $("#UNODC").removeClass("show");
+                    } else if ($('.flipster__item--current')[0].id === 'unhrc') {
+                        $("#UNGA").addClass("hide");
+                        $("#UNHRC").addClass("show");
+                        $("#LOKSABHA").addClass("hide");
+                        $("#WHO").addClass("hide");
+                        $("#UNODC").addClass("hide");
+                        $("#UNGA").removeClass("show");
+                        $("#UNHRC").removeClass("hide");
+                        $("#LOKSABHA").removeClass("show");
+                        $("#WHO").removeClass("show");
+                        $("#UNODC").removeClass("show");
+                    } else if ($('.flipster__item--current')[0].id === 'loksabha') {
+                        $("#UNGA").addClass("hide");
+                        $("#UNHRC").addClass("hide");
+                        $("#LOKSABHA").addClass("show");
+                        $("#WHO").addClass("hide");
+                        $("#UNODC").addClass("hide");
+                        $("#UNGA").removeClass("show");
+                        $("#UNHRC").removeClass("show");
+                        $("#LOKSABHA").removeClass("hide");
+                        $("#WHO").removeClass("show");
+                        $("#UNODC").removeClass("show");
+                    } else if ($('.flipster__item--current')[0].id === 'who') {
+                        $("#UNGA").addClass("hide");
+                        $("#UNHRC").addClass("hide");
+                        $("#LOKSABHA").addClass("hide");
+                        $("#WHO").addClass("show");
+                        $("#UNODC").addClass("hide");
+                        $("#UNGA").removeClass("show");
+                        $("#UNHRC").removeClass("show");
+                        $("#LOKSABHA").removeClass("show");
+                        $("#WHO").removeClass("hide");
+                        $("#UNODC").removeClass("show");
+                    } else if ($('.flipster__item--current')[0].id === 'unodc') {
+                        $("#UNGA").addClass("hide");
+                        $("#UNHRC").addClass("hide");
+                        $("#LOKSABHA").addClass("hide");
+                        $("#WHO").addClass("hide");
+                        $("#UNODC").addClass("show");
+                        $("#UNGA").removeClass("show");
+                        $("#UNHRC").removeClass("show");
+                        $("#LOKSABHA").removeClass("show");
+                        $("#WHO").removeClass("show");
+                        $("#UNODC").removeClass("hide");
+                    }
+                },
+            });
 
-$("#carouel").flipster({
-				style: 'carousel',
-				spacing: -0.5,
-				buttons: true,
-				autoplay: 4000,
-				pauseOnHover: true,
-				scrollwheel: false,
-				click: true,
-				keyboard: true,
-				touch: true,
-				loop: true,
-				fadeIn: 400,
-				onItemSwitch: function () {
-					if ($('.flipster__item--current')[0].id === 'unga') {
-						$("#UNGA").addClass("show");
-						$("#UNHRC").addClass("hide");
-						$("#LOKSABHA").addClass("hide");
-						$("#WHO").addClass("hide");
-						$("#UNODC").addClass("hide");
-						$("#UNGA").removeClass("hide");
-						$("#UNHRC").removeClass("show");
-						$("#LOKSABHA").removeClass("show");
-						$("#WHO").removeClass("show");
-						$("#UNODC").removeClass("show");
-					} else if ($('.flipster__item--current')[0].id === 'unhrc') {
-						$("#UNGA").addClass("hide");
-						$("#UNHRC").addClass("show");
-						$("#LOKSABHA").addClass("hide");
-						$("#WHO").addClass("hide");
-						$("#UNODC").addClass("hide");
-						$("#UNGA").removeClass("show");
-						$("#UNHRC").removeClass("hide");
-						$("#LOKSABHA").removeClass("show");
-						$("#WHO").removeClass("show");
-						$("#UNODC").removeClass("show");
-					} else if ($('.flipster__item--current')[0].id === 'loksabha') {
-						$("#UNGA").addClass("hide");
-						$("#UNHRC").addClass("hide");
-						$("#LOKSABHA").addClass("show");
-						$("#WHO").addClass("hide");
-						$("#UNODC").addClass("hide");
-						$("#UNGA").removeClass("show");
-						$("#UNHRC").removeClass("show");
-						$("#LOKSABHA").removeClass("hide");
-						$("#WHO").removeClass("show");
-						$("#UNODC").removeClass("show");
-					} else if ($('.flipster__item--current')[0].id === 'who') {
-						$("#UNGA").addClass("hide");
-						$("#UNHRC").addClass("hide");
-						$("#LOKSABHA").addClass("hide");
-						$("#WHO").addClass("show");
-						$("#UNODC").addClass("hide");
-						$("#UNGA").removeClass("show");
-						$("#UNHRC").removeClass("show");
-						$("#LOKSABHA").removeClass("show");
-						$("#WHO").removeClass("hide");
-						$("#UNODC").removeClass("show");
-					} else if ($('.flipster__item--current')[0].id === 'unodc') {
-						$("#UNGA").addClass("hide");
-						$("#UNHRC").addClass("hide");
-						$("#LOKSABHA").addClass("hide");
-						$("#WHO").addClass("hide");
-						$("#UNODC").addClass("show");
-						$("#UNGA").removeClass("show");
-						$("#UNHRC").removeClass("show");
-						$("#LOKSABHA").removeClass("show");
-						$("#WHO").removeClass("show");
-						$("#UNODC").removeClass("hide");
-					}
-				},
-			});
 		</script>
+
+		
 </body>
 
 </html>
