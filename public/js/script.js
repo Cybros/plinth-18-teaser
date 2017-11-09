@@ -15,8 +15,22 @@
       $('.nav').removeClass("hidden");
     }
 
-    // for logo
-
-    
+    // for logo    
     
 });
+
+// Smooth page scrooling
+
+$(".page_scroll").click(function(){
+
+        $('html,body').animate({
+
+            scrollTop: $($(this).attr('href')).offset().top
+
+        },'slow');
+    })
+
+
+// Carouel script
+
+           
