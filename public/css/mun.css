@@ -12,14 +12,16 @@ html {
 
 
 body{
-  
+  width: 100%;
   font-family: 'Bree Serif', serif;
 	position: relative;
 	background: none;
 	margin: 0px;
 	padding: 0px;
 }	
-
+.nav-link{
+  color: white ;
+}
 .nav-item a:hover { border-bottom:3px solid #fff;}
 
 a,i{
@@ -51,10 +53,10 @@ a,i{
 
 .hidden{
     
-     background: #eee;
+      
      opacity: .8;
      color: black !important;
-     border-bottom:1px solid black;
+    
 }
 
 
@@ -65,14 +67,28 @@ a,i{
 }
 
 .logo{
-     margin-top: 100px;
+     top: 25%;
      text-align: center;
      color: white;
 }
 
+.heading1{
+font-size: 54px;
+}
+
+.heading2{
+  font-size: 20px;
+}
+
+.heading3{
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+
+}
 .logo img{
 
-     margin-bottom: 50px;
+     margin-bottom: 40px;
 }
 
 .mun-logo{
@@ -84,22 +100,81 @@ a,i{
 
      text-align: left;
 }     
+ 
+
+canvas {
+  width: 900px;
+  height: 200px;
+  display: block;
+  position: relative;
+  background: transparent;
+  margin: 40px auto;
+}
+
+ 
+
+
 
 .btn-outline-secondary{
-     padding-right: 50px;
-     padding-left: 50px;
+     width: 180px;  
+    margin: 16px;
+     color: white;
      background:rgba(0,0,0,0.6);
 
 }
-
-#home{
-
-     padding-bottom: 200px;
+.btn-outline-secondary:hover{
+  color: black;
 }
 
 
-.about{
+.scrolldown-container {
+  width: 100%;
+  top: 23%;
+  height: 175px;
+  position: absolute;
+}
+.scrolldown-container .scrolldown-btn {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+.scrolldown-container .scrolldown-btn svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.scrolldown-container .scrolldown-btn svg path.first-path {
+  animation: scrollanim 1s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+.scrolldown-container .scrolldown-btn svg path.second-path {
+  animation: scrollanim2 1s ease-in-out infinite;
+}
 
+
+#home{
+  height: 100vh;
+  width: 100%;
+    
+}
+
+.about{
+ margin: auto;
+}
+#about{
+    
      font-size: 16px;
      background-color: #eee;
      padding-top: 80px;
@@ -108,14 +183,29 @@ a,i{
      color: black;
 
 }
+.abouttext{
+  margin-top: 50px;
+  text-align: justify;
+  font-size: 20px;
+}
+#organiser{
+  
+      font-size: 16px;
+      background-color: #eee;
+     
+      padding-bottom: 90px;
+      text-align: center;
+      color: black;
+ 
+ }
+
 
 .heading-2{
 
-     font-family: 'Tangerine', serif;
-     font-size: 48px;
-     
+     font-family: 'Vollkorn SC', serif;
+     font-size: 38px;
      color: black;
-     margin-top: -30px;
+     
 }
 
 @media only screen and (max-width: 780px) {
@@ -148,8 +238,36 @@ a,i{
         text-align: center;
         padding-bottom: 15px;
       }
+
+      
+
+    canvas {
+      width: auto;
+      height: 200px;
+      display: block;
+      position: relative;
+      background: transparent;
+      margin: 10px auto;
+    }
 }
 
+#carouel{
+  padding-bottom: 80px;
+}
+ .coming{
+  font-family: 'Lobster', cursive;
+  font-size: 42px;
+  text-align: center;
+
+ }
+.mail{
+  text-align: right;
+
+}
+.add{
+  text-align: left;
+
+}
 /*################## carousel ##################*/
 
       .example-desc {
@@ -162,16 +280,10 @@ a,i{
       #Committees{
           background-color:#eee;
           text-align: center;
-  
+          
       }
 
-      #Committees h1{
-         font-family: 'Tangerine', serif;
-         font-size: 48px;
-         margin-bottom: 10px;
-         padding-top: 30px;
-         color: black;
-      }
+      
 
     
 
@@ -181,16 +293,14 @@ a,i{
 /*########### Executive Board ###################*/
 
 #board{
-
   background-color:#eee;
-  padding-bottom: 100px;
-  padding-top: 50px;
-
+  padding-bottom: 50px;
+  
 }
 
 #register{
   background-color: #eee;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   padding-top: 50px;
 }
 
@@ -199,8 +309,8 @@ a,i{
   background:rgba(0,0,0,0.6);
   border: none;
   transition: .7s;
-  margin-top: 40px;
-  margin-bottom: 100px;
+  
+  
 
 }
 
@@ -235,17 +345,7 @@ footer{
   padding-bottom: 20px;
 }
 
-@media only screen and (min-width: 780px){
 
-  .mail{
-    text-align: right;
-
-  }
-  .add{
-    text-align: left;
-
-}
-}
 
 .links{
 
@@ -278,4 +378,81 @@ footer{
 .links a:hover{
 
   color: #7c7c7c;
+}
+
+@-webkit-keyframes scrollanim {
+  0% {
+    -webkit-transform: translate(0, -40px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0.8;
+  }
+}
+@-moz-keyframes scrollanim {
+  0% {
+    -moz-transform: translate(0, -40px);
+    opacity: 0;
+  }
+  60% {
+    -moz-transform: translate(0, 0);
+    opacity: 0.8;
+  }
+}
+@keyframes scrollanim {
+  0% {
+    -webkit-transform: translate(0, -40px);
+    -moz-transform: translate(0, -40px);
+    -ms-transform: translate(0, -40px);
+    -o-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes scrollanim2 {
+  0% {
+    -webkit-transform: translate(0, -40px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translate(0, 0px);
+    opacity: 0.6;
+  }
+}
+@-moz-keyframes scrollanim2 {
+  0% {
+    -moz-transform: translate(0, -40px);
+    opacity: 0;
+  }
+  60% {
+    -moz-transform: translate(0, 0px);
+    opacity: 0.6;
+  }
+}
+@keyframes scrollanim2 {
+  0% {
+    -webkit-transform: translate(0, -40px);
+    -moz-transform: translate(0, -40px);
+    -ms-transform: translate(0, -40px);
+    -o-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translate(0, 0px);
+    -moz-transform: translate(0, 0px);
+    -ms-transform: translate(0, 0px);
+    -o-transform: translate(0, 0px);
+    transform: translate(0, 0px);
+    opacity: 0.6;
+  }
 }

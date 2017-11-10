@@ -13,7 +13,7 @@
 			$('.nav-item a').css('color','white');
 			$('.nav-link').css('color','white');
       $('.nav').removeClass("hidden");
-    }
+    } 
 
     // for logo    
     
@@ -23,11 +23,22 @@
 
 $(".page_scroll").click(function(){
 
-        $('html,body').animate({
+  if (this.hash !== "") {
 
-            scrollTop: $($(this).attr('href')).offset().top
+    event.preventDefault();
 
-        },'slow');
+   
+    var hash = this.hash;
+
+  
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+ 
+   
+      window.location.hash = hash;
+    });
+  }
     })
 
 

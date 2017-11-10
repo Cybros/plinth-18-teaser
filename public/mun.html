@@ -8,6 +8,8 @@
 
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bree+Serif">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/mun.css">
@@ -17,7 +19,7 @@
 
 <body data-spy="scroll" data-target="#navbar-example" data-offset="200">
 
-	<nav class="navbar navbar-toggleable-md fixed-top navbar-light nav">
+	<nav class="navbar navbar-toggleable-md fixed-top nav">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -27,24 +29,24 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#home" >Home
+					<a class="nav-link page_scroll" href="#home">Home
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#about" >About</a>
+					<a class="nav-link page_scroll" href="#about">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#Committees" >Committees</a>
+					<a class="nav-link page_scroll" href="#organiser">Organiser's Desk</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#board" >Organiser's Desk</a>
+					<a class="nav-link page_scroll" href="#board">Committees</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#contant" >Contact Us</a>
+					<a class="nav-link page_scroll" href="#contant">Contact Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" >Plinth</a>
+					<a class="nav-link" href="#">Plinth</a>
 				</li>
 			</ul>
 
@@ -55,52 +57,110 @@
 		<div class="logo container">
 			<img src="img/mun/plinth-logo.png" height="70px" width="300px">
 			<div class="container">
-				<dir class="row">
+				<div class="row">
 					<div class="col-md-4 mun-logo">
 						<img src="img/mun/logo.png" height="120px" width="120px" style="border-radius: 50%">
 					</div>
-					<div class="col-md-8 heading">
-						<h5>The LNM Institute of Information Technology</h5>
-						<h1>Model United Nations</h1>
-						<h6>January 7th-8th</h6>
+					<div class="col-md-6 heading">
+						<div class="heading2">The LNM Institute of Information Technology</div>
+						<div class="heading1">Model United Nations</div>
+						<div class="heading3">January 7th-8th</div>
 					</div>
-				</dir>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<canvas id="timer"></canvas>
+
+					</div>
+
+				</div>
+
 			</div>
+
+
 			<button type="button" class="btn btn-outline-secondary">Register Now</button>
 		</div>
+	</div>
+	<a href="#about" class="page_scroll">
+		<div class="scrolldown-container page_scroll">
+			<div class="scrolldown-btn">
+				<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="50px" height="80px" viewbox="0 0 50 80" enable-background="new 0 0 50 80" xml:space="preserve">
+					<path class="first-path" fill="#FFFFFF" d="M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057                  s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119                  l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305                  c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z"></path>
+					<path class="second-path" fill="#FFFFFF" d="M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057                  c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12                  l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305                  c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z"></path>
+				</svg>
+			</div>
+		</div>
+	</a>
 
 	</div>
 
 	<!-- ######### HOME END ######### -->
 	<!-- ###### ABOUT SECTION ######## -->
+	<div class="about">
+		<div id="about">
+			<div class="container">
+				<h1 class="text-center heading-2">About</h1>
+				<hr class="underline-1">
+				<hr class="underline-2">
+				<div class="row abouttext">
+					<div class="col-md-12">
+						<p>
+							The LNMIIT Model United Nations Conference (LNMIIT MUN) takes place at LNMIIT, jaipur. LNMIIT MUN 2017 offers delegates the
+							unique opportunity to discuss and debate key world issues, and meet new people from all over India in the rich cultural
+							environment that only one of prestigious university can provide. </p>
+						<p>
+							LNMIIT MUN will run from Saturday 6th January until Sunday 7th January, 2018. The conference is open to all individuals or
+							delegations currently enrolled in an undergraduate or postgraduate degree program.
+						</p>
+						<p>
+							LNMIIT MUN is renowned for its high quality of debate and the overall delegate experience. LNMIIT MUN 2017 aims to ensure
+							that every participant leaves with unforgettable experiences of a weekend filled with passionate debate. With difficulty
+							ratings ranging from Novice to Extreme, LNMIIT MUN has a committee tailored to your preferences and experience.
+						</p>
 
-	<div id="about" class="about">
-		<div class="container">
-			<h1 class="text-center heading-2">About</h1>
-			<hr class="underline-1">
-			<hr class="underline-2">
-			<div class="row" style="margin-top: 50px;">
-				<div class="col-md-6">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat iaculis sagittis. Maecenas et bibendum eros. Mauris
-						imperdiet diam luctus justo vestibulum, eu malesuada dolor tincidunt. Quisque ac nulla lorem. Integer placerat enim
-						a mollis accumsan. Duis quam urna, molestie id lobortis et, gravida sit amet tellus. Nulla porta nisi sit amet vehicula
-						condimentum. Cras semper mauris a odio ornare maximus. Nam id neque massa. Aliquam dignissim maximus finibus. Ut tincidunt
-						massa et neque ornare consectetur.
-					</p>
-					<!-- <div class="well">
-                        <blockquote>
-                            <p>A word from the Secretary General of LNMIIT MUN Society. </p>
-                            <footer>Sec-Gen</footer>
-                        </blockquote>
-                    </div> -->
+						</p>
+						<!-- <div class="well">
+															<blockquote>
+																	<p>A word from the Secretary General of LNMIIT MUN Society. </p>
+																	<footer>Sec-Gen</footer>
+															</blockquote>
+													</div> -->
+					</div>
+
 				</div>
-				<div class="col-md-6">
-					<img src="img/mun/img3.png" alt="SecGen">
+			</div>
+		</div>
+		<div id="organiser">
+			<div class="container">
+				<h1 class="text-center heading-2">Organizer's Desk</h1>
+				<hr class="underline-1">
+				<hr class="underline-2">
+				<div class="row abouttext">
+					<div class="col-md-8">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat iaculis sagittis. Maecenas et bibendum eros. Mauris
+							imperdiet diam luctus justo vestibulum, eu malesuada dolor tincidunt. Quisque ac nulla lorem. Integer placerat enim
+							a mollis accumsan. Duis quam urna, molestie id lobortis et, gravida sit amet tellus. Nulla porta nisi sit amet vehicula
+							condimentum. Cras semper mauris a odio ornare maximus. Nam id neque massa. Aliquam dignissim maximus finibus. Ut tincidunt
+							massa et neque ornare consectetur.
+						</p>
+						<!-- <div class="well">
+																<blockquote>
+																		<p>A word from the Secretary General of LNMIIT MUN Society. </p>
+																		<footer>Sec-Gen</footer>
+																</blockquote>
+														</div> -->
+					</div>
+					<div class="col-md-4">
+						<img src="img/mun/img3.png" alt="SecGen">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
 
 
 	<!-- ##### About End ########-->
@@ -112,13 +172,14 @@
 
 		<div id="carouel">
 			<ul class="flip-items">
-				<li id="unga">
+				<li id="Gadisec">
 					<div class="card" style="width: 20rem;">
 						<img class="card-img-top" src="img/mun/1.jpg" alt="Card image cap">
 						<div class="card-block">
-							<h4 class="card-title">Card title</h4>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a data-target="#myModal11" data-toggle="modal" href="#"> Launch demo modal</a>
+							<h4 class="card-title">GA(DISEC)</h4>
+							<p class="card-text">DISEC deals with topics that center around disarmament, global issues, and threats to peace that jeopardize international
+								security.</p>
+							<a data-target="#myModal11" class="btn btn-primary" data-toggle="modal" href="#"> Learn More</a>
 
 						</div>
 					</div>
@@ -128,33 +189,33 @@
 					<div class="card" style="width: 20rem;">
 						<img class="card-img-top" src="img/mun/2.jpg" alt="Card image cap">
 						<div class="card-block">
-							<h4 class="card-title">Card title</h4>
+							<h4 class="card-title">UNHRC</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<a data-target="#myModal11" class="btn btn-primary" data-toggle="modal" href="#"> Learn More</a>
 						</div>
 					</div>
 				</li>
-				<li id="loksabha">
+				<li id="aippm">
 					<div class="card" style="width: 20rem;">
 						<img class="card-img-top" src="img/mun/3.jpg" alt="Card image cap">
 						<div class="card-block">
-							<h4 class="card-title">Card title</h4>
+							<h4 class="card-title">AIPPM</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<a data-target="#myModal11" class="btn btn-primary" data-toggle="modal" href="#"> Learn More</a>
 						</div>
 					</div>
 				</li>
-				<li id="who">
+				<li id="unicef">
 					<div class="card" style="width: 20rem;">
 						<img class="card-img-top" src="img/mun/4.jpg" alt="Card image cap">
 						<div class="card-block">
-							<h4 class="card-title">Card title</h4>
+							<h4 class="card-title">UNICEF</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
+							<a data-target="#myModal11" class="btn btn-primary" data-toggle="modal" href="#"> Learn More</a>
 						</div>
 					</div>
 				</li>
-				<li id="unodc">
+				<!-- 	<li id="unodc">
 					<div class="card" style="width: 20rem;">
 						<img class="card-img-top" src="img/mun/5.jpg" alt="Card image cap">
 						<div class="card-block">
@@ -163,7 +224,7 @@
 							<a href="#" class="btn btn-primary">Go somewhere</a>
 						</div>
 					</div>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 
@@ -197,7 +258,7 @@
 			<hr class="underline-1">
 			<hr class="underline-2">
 			<div class="container">
-				<div id="UNGA" class="hide text-center">
+				<!-- 		<div id="UNGA" class="hide text-center">
 					<div class="row">
 						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
 							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
@@ -217,99 +278,30 @@
 						</div>
 					</div>
 				</div>
-
-				<div id="UNHRC" class="show text-center">
-					<div class="row">
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">WHO</h4>
-								<p class="card-text">Some quick example </p>
-							</div>
-						</div>
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">WHO</h4>
-								<p class="card-text">Some quick example</p>
-							</div>
-						</div>
-					</div>
+ -->
+				<div class="coming">
+					COMING SOON
 				</div>
 
-				<div id="LOKSABHA" class="hide text-center">
-					<div class="row">
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">UNHRC</h4>
-								<p class="card-text">Some quick example</p>
-							</div>
-						</div>
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">UNHRC</h4>
-								<p class="card-text">Some quick example
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div id="WHO" class="hide text-center">
-					<div class="row">
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">UNHRC</h4>
-								<p class="card-text">Some quick example</p>
-							</div>
-						</div>
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">UNHRC</h4>
-								<p class="card-text">Some quick example
-							</div>
-						</div>
-					</div>
-				</div>
 
-				<div id="UNODC" class="hide text-center">
-					<div class="row">
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">UNHRC</h4>
-								<p class="card-text">Some quick example</p>
-							</div>
-						</div>
-						<div class="card offset-md-2 col-md-3 col-sm-6" style="width: 20rem;">
-							<img class="card-img-top" src="img/mun/img3.png" alt="Card image cap">
-							<div class="card-block">
-								<h4 class="card-title">UNHRC</h4>
-								<p class="card-text">Some quick example
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 
 		<!-- ############## END ################## -->
 
-			<!-- ######## Executive Board ######## -->
+		<!-- ######## Executive Board ######## -->
 		<div id="register">
-				<h1 class="text-center heading-2">Register</h1>
-				<hr class="underline-1">
-				<hr class="underline-2">
-				<div style=" text-align: center;">
-						<button type="button" class="btn btn-outline-secondary">Register Now</button>
-						<button type="button" class="btn btn-outline-secondary">Register Now</button>
-					</div>
+			<h1 class="text-center heading-2">Register</h1>
+			<hr class="underline-1">
+			<hr class="underline-2">
+			<div style=" text-align: center;">
+				<button type="button" class="btn btn-outline-secondary">Delegate</button>
+				<button type="button" class="btn btn-outline-secondary">International Press</button>
+			</div>
 		</div>
 
-			<!-- ############## END ################## -->
+		<!-- ############## END ################## -->
 
 		<footer id="contant">
 			<h1 class="text-center heading-2">Contact Us</h1>
@@ -360,82 +352,28 @@
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script src="js/jquery.flipster.min.js"></script>
+		<script src="js/timer.js"></script>
 		<script type="text/javascript">
-			 $("#carouel").flipster({
-                style: 'carousel',
-                spacing: -0.5,
-                buttons: true,
-                autoplay: 4000,
-                pauseOnHover: true,
-                scrollwheel: false,
-                click: true,
-                keyboard: true,
-                touch: true,
-                loop: true,
-                fadeIn: 400,
-                onItemSwitch: function () {
-                    if ($('.flipster__item--current')[0].id === 'unga') {
-                        $("#UNGA").addClass("show");
-                        $("#UNHRC").addClass("hide");
-                        $("#LOKSABHA").addClass("hide");
-                        $("#WHO").addClass("hide");
-                        $("#UNODC").addClass("hide");
-                        $("#UNGA").removeClass("hide");
-                        $("#UNHRC").removeClass("show");
-                        $("#LOKSABHA").removeClass("show");
-                        $("#WHO").removeClass("show");
-                        $("#UNODC").removeClass("show");
-                    } else if ($('.flipster__item--current')[0].id === 'unhrc') {
-                        $("#UNGA").addClass("hide");
-                        $("#UNHRC").addClass("show");
-                        $("#LOKSABHA").addClass("hide");
-                        $("#WHO").addClass("hide");
-                        $("#UNODC").addClass("hide");
-                        $("#UNGA").removeClass("show");
-                        $("#UNHRC").removeClass("hide");
-                        $("#LOKSABHA").removeClass("show");
-                        $("#WHO").removeClass("show");
-                        $("#UNODC").removeClass("show");
-                    } else if ($('.flipster__item--current')[0].id === 'loksabha') {
-                        $("#UNGA").addClass("hide");
-                        $("#UNHRC").addClass("hide");
-                        $("#LOKSABHA").addClass("show");
-                        $("#WHO").addClass("hide");
-                        $("#UNODC").addClass("hide");
-                        $("#UNGA").removeClass("show");
-                        $("#UNHRC").removeClass("show");
-                        $("#LOKSABHA").removeClass("hide");
-                        $("#WHO").removeClass("show");
-                        $("#UNODC").removeClass("show");
-                    } else if ($('.flipster__item--current')[0].id === 'who') {
-                        $("#UNGA").addClass("hide");
-                        $("#UNHRC").addClass("hide");
-                        $("#LOKSABHA").addClass("hide");
-                        $("#WHO").addClass("show");
-                        $("#UNODC").addClass("hide");
-                        $("#UNGA").removeClass("show");
-                        $("#UNHRC").removeClass("show");
-                        $("#LOKSABHA").removeClass("show");
-                        $("#WHO").removeClass("hide");
-                        $("#UNODC").removeClass("show");
-                    } else if ($('.flipster__item--current')[0].id === 'unodc') {
-                        $("#UNGA").addClass("hide");
-                        $("#UNHRC").addClass("hide");
-                        $("#LOKSABHA").addClass("hide");
-                        $("#WHO").addClass("hide");
-                        $("#UNODC").addClass("show");
-                        $("#UNGA").removeClass("show");
-                        $("#UNHRC").removeClass("show");
-                        $("#LOKSABHA").removeClass("show");
-                        $("#WHO").removeClass("show");
-                        $("#UNODC").removeClass("hide");
-                    }
-                },
-            });
+			$("#carouel").flipster({
+				style: 'carousel',
+				spacing: -0.5,
+				buttons: true,
+				autoplay: 4000,
+				pauseOnHover: true,
+				scrollwheel: false,
+				click: true,
+				keyboard: true,
+				touch: true,
+				loop: true,
+				fadeIn: 400,
+				onItemSwitch: function () {
+				
+				},
+			});
 
 		</script>
 
-		
+
 </body>
 
 </html>
