@@ -4,7 +4,7 @@ var footer = document.getElementById("footer");
 var wrapper = document.getElementById("wrapper");
 var icons = document.getElementById("icons");
 var button = document.getElementById("button");
-
+var date = document.getElementById("date");
 
 function show() {
   wrapper.style.opacity = 1;
@@ -50,6 +50,7 @@ function move(elem, callback) {
 function todo() {
   logo.style.opacity = 0;
   text.style.opacity = 0;
+  date.style.opacity = 0;
   footer.style.opacity = 0;
   wrapper.style.opacity = 1;
   size = (window.innerWidth + window.innerHeight) / 7.5;
@@ -61,8 +62,12 @@ function todo() {
     move(logo, function() {
       fadeIn(text, function() {
         move(null, function(){
-          fadeIn(footer);
-        })
+          fadeIn(date, function(){
+            move(null, function(){
+              fadeIn(footer);
+            });
+          });
+        });
       });
     });
   });

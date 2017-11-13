@@ -26,6 +26,10 @@ html {
   margin-top: 15%;
 }
 
+#date{
+align-content: right;
+}
+
 #footer {
   margin-top: 20%;
 }
