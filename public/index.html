@@ -8,8 +8,11 @@
   <link rel="stylesheet" type="text/css" href="css/loader.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="favicon icon" href="favicon.ico" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sponsors.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109689316-1"></script>
   <script>
@@ -25,7 +28,7 @@
 </head>
 
 <body>
-  <section style="overflow:scroll;">
+  <section>
       <div id="wrapper">
           <img id="logo" src="img/plinthlogo.png" width="35%" />
           <img id="text" src="img/plinthtext.png" width="100%" />
@@ -69,10 +72,512 @@
         </div>
         <canvas id=C></canvas>
   </section>
-  <section style="padding-top:100vh;">
-something i can right here but should be visible anyhow.
-  </section>
- 
+  <div id="overlay" class="text-center" style="order:2; color:black;">
+
+      <div class="content">
+          <div class="row head">
+              <div class="small-10 small-centered columns text-center">
+                  <h4>Our Sponsors</h4>
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="small-10 small-centered columns">
+              <div class="spons-content-big">
+                  <p class="title-sponsor-name">Title Sponsor</p>
+                  <img src="sponsors_2k17/ei-logo.svg" alt="Engineer Indya" class="ei"/>
+                  <div class="name-big">
+                      <span>Engineer Indya</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="big-wrapper">
+          <div class="row">
+              <div class="small-12 small-centered columns">
+                  <div class="row">
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                          <div class="spons-content">
+                            <a href="http://plinth.grabon.in/" target="_blank">
+                                  <img src="sponsors_2k17/GrabOn.png" alt="GrabOn" class="grab"/>
+                              </a>
+                              <div class="name go">
+                                  <a style="color:#75BFF0" href="https://goo.gl/0Fh1O7" target="_blank">Get the App</a><br>
+                                  <span>Coupon Partner</span>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                          <div class="spons-content">
+                              <a href="https://www.nearbuy.com/" target="_blank">
+                              <img src="sponsors_2k17/nearbuy.png" alt="OYO" class="oyo"/>
+                              <div class="name oy">
+                                  <span>e-commerce Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                          <div class="spons-content">
+                              <a href="https://www.zoomcar.com/" target="_blank">
+                              <img src="sponsors_2k17/zoom.jpg" alt="Zoom Car" class="zoom"/>
+                              <div class="name zoo">
+                                  <span>Self Drive Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                          <div class="spons-content">
+                              <a href="http://www.mahindraworldcity.com/jaipur/discover-jaipur.aspx" target="_blank">
+                              <img src="sponsors_2k17/mwc.jpg" alt="Mahindra World City" class="mwc"/>
+                              <div class="name zoo">
+                                  <span>General Partner</span>
+                              </div>
+                          </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 end columns" >
+                          <div class="spons-content">
+                              <a href="http://www.roboflux.com/" target="_blank">
+                              <img src="sponsors_2k17/robo.jpg" alt="Robo flux" class="zoom"/>
+                              <div class="name roboflu">
+                                  <span>Workshop Associate</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+
+
+                  </div>
+                  <div class="row">
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns" >
+                          <div class="spons-content">
+<!--                                <a href="http://www.mrbeanspizza.com/" target="_blank">-->
+                              <img src="sponsors_2k17/food.jpg" alt="YNC" class="ync"/>
+                              <div class="name ynctxt">
+                                  <span>Official Food Partner</span>
+                              </div>
+<!--                                </a>-->
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 end columns" >
+                          <div class="spons-content">
+                              <a href="http://www.manyagroup.com/" target="_blank">
+                              <img src="sponsors_2k17/manya.png" alt="Manya Group" class="manya"/>
+                              <div class="name manyatxt">
+                                  <span>Event Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 end columns" >
+                          <div class="spons-content">
+                              <a href="https://www.princetonreview.com/" target="_blank">
+                              <img src="sponsors_2k17/tpr.png" alt="the princeton review" class="tpr"/>
+                              <div class="name tprtxt">
+                                  <span>Event Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                          <div class="spons-content">
+                              <a href="http://www.proxbotcreatn.com/" target="_blank">
+                              <img src="sponsors_2k17/proxbotics.jpg" alt="Proxbotics Creation" class="atkt"/>
+                              <div class="name proxbotics">
+                                  <span>Event Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 end columns" >
+                          <div class="spons-content">
+                              <a href="https://www.hackerearth.com" target="_blank">
+                              <img src="sponsors_2k17/hackerearth.png" alt="Hacker Earth" class="hackerearth"/>
+                              <div class="name hackerearthtxt">
+                                  <span>IUPC platform partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 end columns" >
+                          <div class="spons-content">
+                              <a href="http://www.geeksforgeeks.org/" target="_blank">
+                              <img src="sponsors_2k17/geek.png" alt="Geeks for Geek" class="geek"/>
+                              <div class="name geektxt">
+                                  <span>IUPC Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 end columns" >
+                          <div class="spons-content">
+                              <a href="https://doselect.com" target="_blank">
+                              <img src="sponsors_2k17/doselect.png" alt="Do Select" class="select"/>
+                              <div class="name selecttxt">
+                                  <span>Fix The Bug Platform Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                          <div class="spons-content">
+<!--                                <a href="http://www.mrbeanspizza.com/" target="_blank">-->
+                              <img src="sponsors_2k17/food.png" alt="VitoCafe" class="vito"/>
+                              <div class="name vitocafe">
+                                  <span>Food Partner</span>
+                              </div>
+<!--                                </a>-->
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                          <div class="spons-content">
+<!--                                <a href="http://www.mrbeanspizza.com/" target="_blank">-->
+                              <img src="sponsors_2k17/bisleri.png" alt="Bisleri" class="bisleri"/>
+                              <div class="name bisleri-text">
+                                  <span>Bevarage Partner</span>
+                              </div>
+<!--                                </a>-->
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                          <div class="spons-content">
+                              <a href="http://www.mrbeanspizza.com/" target="_blank">
+                              <img src="sponsors_2k17/beans-pizza.png" alt="Mr. Beans Pizza" class="pizza"/>
+                              <div class="name pizz">
+                                  <span>Food Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns" >
+                          <div class="spons-content">
+                              <a href="http://samuncleindia.com/" target="_blank">
+                              <img src="sponsors_2k17/sam_uncle.jpg" alt="Sam Uncle" class="sam"/>
+                              <div class="name sampizz">
+                                  <span>Coupon Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                      <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 end columns" >
+                          <div class="spons-content">
+                              <a href="http://atkt.in/" target="_blank">
+                              <img src="sponsors_2k17/atkt.jpg" alt="ATKT" class="atkt"/>
+                              <div class="name atkttxt">
+                                  <span>Media Partner</span>
+                              </div>
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="content">
+            <div class="row head">
+                <div class="small-10 small-centered columns text-center">
+                    <h4>Our Previous Sponsors</h4>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+        <div class="big-wrapper">
+            <div class="row">
+                <div class="small-12 small-centered columns">
+                    <div class="row">
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/sap.gif" alt="lorem" />
+                                <div class="name">
+                                    <span>SAP</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/ti.png" alt="lorem" />
+                                <div class="name ti">
+                                    <span>Texas Instruments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/i3indya.png" alt="lorem" />
+                                <div class="name i3">
+                                    <span>i3indya Technologies</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/av.jpg" alt="lorem" />
+                                <div class="name av">
+                                    <span>Analytics Vidhya</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/g4g.png" alt="lorem" />
+                                <div class="name g4g">
+                                    <span>Geeks For Geeks</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/inspi.png" alt="lorem" />
+                                <div class="name">
+                                    <span>Inspidate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/innovaccer.png" alt="lorem" />
+                                <div class="name">
+                                    <span>Innovaccer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/hackerearth.png" alt="lorem" />
+                                <div class="name he">
+                                    <span>HackerEarth</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/hr.jpg" alt="lorem" />
+                                <div class="name hr">
+                                    <span>HackerRank</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/srjna.png" alt="lorem" />
+                                <div class="name srj">
+                                    <span>Srjna</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/tvg.png" alt="lorem" />
+                                <div class="name tvg">
+                                    <span>TVG</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/ve.jpg" alt="lorem" />
+                                <div class="name">
+                                    <span>Phaco Surgery</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/adideva.png" alt="lorem" />
+                                <div class="name">
+                                    <span>Adideva</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/roboraze.png" alt="lorem" />
+                                <div class="name rc">
+                                    <span>Robocraze</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/zw.png" alt="lorem" />
+                                <div class="name">
+                                    <span>Zero Waste</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/finx.png" alt="lorem" />
+                                <div class="name fin">
+                                    <span>Finx</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/space.png" alt="lorem" />
+                                <div class="name sd">
+                                    <span>Space Dev</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/tcf.png" alt="lorem" />
+                                <div class="name tcf">
+                                    <span>The College Fever</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/dream.jpg" alt="lorem" />
+                                <div class="name dw">
+                                    <span>Dream Wallets</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/ivycamp.jpg" alt="lorem" />
+                                <div class="name ivy">
+                                    <span>Ivy Camp</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/startup.png" alt="lorem" />
+                                <div class="name so">
+                                    <span>Startup Oasis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/adword.png" alt="lorem" />
+                                <div class="name ga">
+                                    <span>Google AdWords</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/ketto.jpg" alt="lorem" />
+                                <div class="name ket">
+                                    <span>Ketto</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/wh.jpg" alt="lorem" />
+                                <div class="name wh">
+                                    <span>Wired Hub</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/ebay.jpg" alt="lorem" />
+                                <div class="name eb">
+                                    <span>ebay</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-offset-1 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/pizza.jpg" alt="lorem" />
+                                <div class="name lp">
+                                    <span>Laziz Pizza</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/youth.jpg" alt="lorem" />
+                                <div class="name yi">
+                                    <span>Youth Incorporated</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/bb.png" alt="lorem" />
+                                <div class="name bb">
+                                    <span>Brain Buxa</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/2019.jpg" alt="lorem" />
+                                <div class="name t19">
+                                    <span>Twenty 19</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/me.png" alt="lorem" />
+                                <div class="name max">
+                                    <span>Max Embedded</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-push-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/knowyourfest.png" alt="lorem" />
+                                <div class="name kaf">
+                                    <span>Know a Fest</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-push-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/festpav.png" alt="lorem" />
+                                <div class="name fp">
+                                    <span>FestPav</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 large-2 large-push-2 columns">
+                            <div class="spons-content">
+                                <img src="sponsors/fe.jpg" alt="lorem" />
+                                <div class="name fad">
+                                    <span>Fadoo Engineers</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-10 small-offset-1 medium-offset-0 medium-3 medium-pull-6 large-2 large-pull-2 columns" >
+                            <div class="spons-content">
+                                <img src="sponsors/ae.png" alt="lorem" />
+                                <div class="name all">
+                                    <span>AllEvents</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
   <script type="text/javascript" src="js/anime.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/scripts.js"></script>
