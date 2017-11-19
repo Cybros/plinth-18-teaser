@@ -4,15 +4,17 @@
     var scroll = $(window).scrollTop();
     var homeHeight = $('#home').height() -22;
     console.log(homeHeight,scroll);
-    if(scroll > homeHeight){
-        $('.nav-item a').css('color','black');
-        $('.nav-link').css('color','black');
+    if(scroll < homeHeight){
+        $('.nav').removeClass("fixed-top");
         $('.nav').addClass("hidden");
+        $('.nav').css('background','transparent');
     }
     else {
+      $('.nav').addClass("fixed-top");
 			$('.nav-item a').css('color','white');
 			$('.nav-link').css('color','white');
       $('.nav').removeClass("hidden");
+      $('.nav').css('background-color','black');
     } 
 
     // for logo    
