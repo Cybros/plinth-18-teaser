@@ -3,7 +3,7 @@
 			$(window).scroll(function (event) {
     var scroll = $(window).scrollTop();
     var homeHeight = $('#home').height() -22;
-    console.log(homeHeight,scroll);
+    
     if(scroll < homeHeight){
         $('.nav').removeClass("fixed-top");
         $('.nav').addClass("hidden");
@@ -11,8 +11,6 @@
     }
     else {
       $('.nav').addClass("fixed-top");
-			$('.nav-item a').css('color','white');
-			$('.nav-link').css('color','white');
       $('.nav').removeClass("hidden");
       $('.nav').css('background-color','black');
     } 

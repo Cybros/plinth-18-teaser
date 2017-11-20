@@ -19,9 +19,9 @@ var ringer = {
       } 
      },
     r_count: 4,
-    r_spacing: 16, // px
-    r_size: 75, // px
-    r_thickness: 3, // px
+    r_spacing: 12, // px
+    r_size: 70, // px
+    r_thickness: 2, // px
     update_interval: 22, // ms
       
       

@@ -16,32 +16,32 @@
 	<link rel="stylesheet" href="css/flipster.min.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109689316-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109689316-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-  gtag('config', 'UA-109689316-1');
-</script>
+		gtag('config', 'UA-109689316-1');
+	</script>
 
 </head>
 
 <body data-spy="scroll" data-target="#navbar-example" data-offset="200">
 
-	<nav class="navbar navbar-toggleable-md fixed-top nav">
+	<nav class="navbar navbar-toggleable-md navbar-inverse nav hidden" id="nb">
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 		 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon " ></span>
 		</button>
-		<a class="navbar-brand" href="#">
-			<img src="img/mun/logo.png" height="70px" width="70px" style="border-radius: 50%">
-		</a>
+
+		<img class="mun-logo" src="img/mun/logo.png" height="64px" width="64px" style="border-radius: 50%">
+
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#home">Home
+					<a class="nav-link page_scroll" href="#nb">Home
 						<span class="sr-only">(current)</span>
 					</a>
 				</li>
@@ -52,13 +52,13 @@
 					<a class="nav-link page_scroll" href="#organiser">Organiser's Desk</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link page_scroll" href="#board">Committees</a>
+					<a class="nav-link page_scroll" href="#Committees">Committees</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link page_scroll" href="#contant">Contact Us</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Plinth</a>
+					<a class="nav-link" href="/">Plinth</a>
 				</li>
 			</ul>
 
@@ -67,7 +67,7 @@
 
 	<div id="home">
 		<div class="logo container">
-			<img src="img/mun/plinth-logo.png" height="70px" width="300px">
+			<img src="img/mun/plinth-logo.png" height="70px">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-4 mun-logo">
@@ -80,31 +80,29 @@
 					</div>
 				</div>
 
-				<div class="row">
-					<div class="col-md-12">
-						<canvas id="timer"></canvas>
 
-					</div>
+				<canvas id="timer"></canvas>
 
-				</div>
+
 
 			</div>
 
 
 			<button type="button" class="btn btn-outline-secondary">Register Now</button>
 		</div>
+		<a href="#about" class="page_scroll">
+				<div class="scrolldown-container page_scroll">
+					<div class="scrolldown-btn">
+						<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						 width="50px" height="80px" viewbox="0 0 50 80" enable-background="new 0 0 50 80" xml:space="preserve">
+							<path class="first-path" fill="#FFFFFF" d="M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057                  s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119                  l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305                  c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z"></path>
+							<path class="second-path" fill="#FFFFFF" d="M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057                  c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12                  l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305                  c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z"></path>
+						</svg>
+					</div>
+				</div>
+			</a>
 	</div>
-	<a href="#about" class="page_scroll">
-		<div class="scrolldown-container page_scroll">
-			<div class="scrolldown-btn">
-				<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 width="50px" height="80px" viewbox="0 0 50 80" enable-background="new 0 0 50 80" xml:space="preserve">
-					<path class="first-path" fill="#FFFFFF" d="M24.752,79.182c-0.397,0-0.752-0.154-1.06-0.463L2.207,57.234c-0.306-0.305-0.458-0.656-0.458-1.057                  s0.152-0.752,0.458-1.059l2.305-2.305c0.309-0.309,0.663-0.461,1.06-0.461c0.398,0,0.752,0.152,1.061,0.461l18.119,18.119                  l18.122-18.119c0.306-0.309,0.657-0.461,1.057-0.461c0.402,0,0.753,0.152,1.059,0.461l2.306,2.305                  c0.308,0.307,0.461,0.658,0.461,1.059s-0.153,0.752-0.461,1.057L25.813,78.719C25.504,79.027,25.15,79.182,24.752,79.182z"></path>
-					<path class="second-path" fill="#FFFFFF" d="M24.752,58.25c-0.397,0-0.752-0.154-1.06-0.463L2.207,36.303c-0.306-0.304-0.458-0.655-0.458-1.057                  c0-0.4,0.152-0.752,0.458-1.058l2.305-2.305c0.309-0.308,0.663-0.461,1.06-0.461c0.398,0,0.752,0.153,1.061,0.461l18.119,18.12                  l18.122-18.12c0.306-0.308,0.657-0.461,1.057-0.461c0.402,0,0.753,0.153,1.059,0.461l2.306,2.305                  c0.308,0.306,0.461,0.657,0.461,1.058c0,0.401-0.153,0.753-0.461,1.057L25.813,57.787C25.504,58.096,25.15,58.25,24.752,58.25z"></path>
-				</svg>
-			</div>
-		</div>
-	</a>
+	
 	<!-- ######### HOME END ######### -->
 	<!-- ###### ABOUT SECTION ######## -->
 	<div class="about">
@@ -146,25 +144,32 @@
 				<h1 class="text-center heading-2">Organizer's Desk</h1>
 				<hr class="underline-1">
 				<hr class="underline-2">
-				<div class="row abouttext">
-					<div class="col-md-8">
+				<div class="row ">
+						<div class="col-md-12 text-center">
+								<img src="img/mun/img3.png" alt="SecGen">
+							</div>
+							<div class="col-md-12 text-center">
+								<div>Anirudh Saini</div>	
+								<div>Secretary General</div>
+								
+								</div>
+					<div class="col-md-12 abouttext">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat iaculis sagittis. Maecenas et bibendum eros. Mauris
-							imperdiet diam luctus justo vestibulum, eu malesuada dolor tincidunt. Quisque ac nulla lorem. Integer placerat enim
-							a mollis accumsan. Duis quam urna, molestie id lobortis et, gravida sit amet tellus. Nulla porta nisi sit amet vehicula
-							condimentum. Cras semper mauris a odio ornare maximus. Nam id neque massa. Aliquam dignissim maximus finibus. Ut tincidunt
-							massa et neque ornare consectetur.
+							Dear friends, 
+							It gives me immense pleasure to bring you the 4th edition of LNMIIT Model United Nations, to be held on 6th-7th
+							of January, 2018 at LNMIIT, Jaipur. It is my privilege to lead the team which will be your host for this conference.
+							Every MUN that I have been a part of, has strengthened the belief, that an MUN is the most complete form of debate.
+							It is a great opportunity to enhance skills in research, writing, public speaking, problem solving, consensus building
+							and crisis management. It gives you the honor of being an ambassador of a country. More importantly, it entrusts you
+							with the task of solving global issues. With LNMIIT MUN, we intend to provide you a platform to discuss and deliberate
+							on realistic issues through an assemblage of committees, led by a brilliant Executive Board. The team is committed
+							to make your experience enjoyable and rewarding through a structured environment. We hope to make the conference a
+							landmark MUN and aspire for your support in doing so. I welcome you again and look forward to see you all here at
+							LNMIIT MUN 2018.
 						</p>
-						<!-- <div class="well">
-																<blockquote>
-																		<p>A word from the Secretary General of LNMIIT MUN Society. </p>
-																		<footer>Sec-Gen</footer>
-																</blockquote>
-														</div> -->
+					 
 					</div>
-					<div class="col-md-4 text-center">
-						<img src="img/mun/img3.png" alt="SecGen">
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -183,11 +188,12 @@
 			<ul class="flip-items">
 				<li id="Gadisec">
 					<div class="card" style="width: 20rem;">
-						<img class="card-img-top" src="img/mun/1.jpg" alt="Card image cap">
+						<img class="card-img-top" src="img/mun/disec.png"  alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title">GA(DISEC)</h4>
 							<p class="card-text">DISEC deals with topics that center around disarmament, global issues, and threats to peace that jeopardize international
-								security.</p>
+								security.
+							</p>
 							<a data-target="#myModal11" class="btn btn-primary" data-toggle="modal" href="#"> Learn More</a>
 
 						</div>
@@ -196,7 +202,7 @@
 				</li>
 				<li id="unhrc">
 					<div class="card" style="width: 20rem;">
-						<img class="card-img-top" src="img/mun/2.jpg" alt="Card image cap">
+						<img class="card-img-top" src="img/mun/unhrc.png" alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title">UNHRC</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -206,7 +212,7 @@
 				</li>
 				<li id="aippm">
 					<div class="card" style="width: 20rem;">
-						<img class="card-img-top" src="img/mun/3.jpg" alt="Card image cap">
+						<img class="card-img-top" src="img/mun/aippm.png" alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title">AIPPM</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -216,7 +222,7 @@
 				</li>
 				<li id="unicef">
 					<div class="card" style="width: 20rem;">
-						<img class="card-img-top" src="img/mun/4.jpg" alt="Card image cap">
+						<img class="card-img-top" src="img/mun/unicef.svg" alt="Card image cap">
 						<div class="card-block">
 							<h4 class="card-title">UNICEF</h4>
 							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -319,9 +325,9 @@
 			<div class="address container">
 				<div class="row">
 					<div class="mail col-md-6">
-						<i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;+91-8560027723</i>
+						<i class="fa fa-phone" aria-hidden="true">&nbsp;&nbsp;+91-9082081504</i>
 						<br>
-						<i class="fa fa-envelope-o" aria-hidden="true">&nbsp;&nbsp;lnmiit.mun@gmail.com</i>
+						<i class="fa fa-envelope-o" aria-hidden="true">&nbsp;&nbsp;mun@plinth.in</i>
 					</div>
 					<div class="add col-md-6">
 						<p> The LNM Institute of Information Technology
@@ -336,10 +342,10 @@
 
 			<div class="links">
 				<div>
-					<i class="fa fa-facebook" aria-hidden="true"></i>
-					<i class="fa fa-twitter" aria-hidden="true"></i>
-					<i class="fa fa-google-plus" aria-hidden="true"></i>
-					<i class="fa fa-youtube" aria-hidden="true"></i>
+					<a href="https://www.facebook.com/LNMIITMUNSociety/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/PlinthLNMIIT"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://plus.google.com/+PLINTHLNMIIT/posts"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+					<a href="https://www.youtube.com/user/PlinthLNMIITJaipur"><i class="fa fa-youtube" aria-hidden="true"></i></a>
 				</div>
 				<div>
 					<a href="#">About Plinth</a>
@@ -376,7 +382,7 @@
 				loop: true,
 				fadeIn: 400,
 				onItemSwitch: function () {
-				
+
 				},
 			});
 

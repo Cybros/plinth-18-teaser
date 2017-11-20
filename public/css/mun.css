@@ -1,27 +1,26 @@
 
 html { 
-          background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed;
-          background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed;
-          background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed;
-          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed; 
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
+        
           }
 
 
 body{
   width: 100%;
-  height: 100vh;
+   
   font-family: 'Bree Serif', serif;
-	position: relative;
-	background: none;
-	margin: 0px;
-	padding: 0px;
+	 
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed;
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mun/image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
 }	
 .nav-link{
-  color: white ;
+  color: white !important;
 }
 .nav-item a:hover { border-bottom:3px solid #fff;}
 
@@ -48,13 +47,19 @@ a,i{
      background-color: rgb(0, 0, 0);
      -webkit-transition: 1s; 
     transition: 1s;
-    
+   
+    z-index: 5px;
 
 }
+ 
+.hidden .mun-logo {
+  visibility: hidden;
+  }
 
 .hidden{
   opacity: 1;
   color:white;
+  background-color: transparent;
     
 }
 
@@ -66,7 +71,7 @@ a,i{
 }
 
 .logo{
-     top: 25%;
+     top: 15%;
      text-align: center;
      color: white;
 }
@@ -128,9 +133,9 @@ canvas {
 
 .scrolldown-container {
   width: 100%;
-  top: 23%;
-  height: 175px;
-  position: relative;
+  bottom: -1%;
+  height: 150px;
+  position: absolute;
 }
 .scrolldown-container .scrolldown-btn {
   width: 50px;
@@ -164,20 +169,19 @@ canvas {
 
 
 #home{
-  height: 100vh;
+  padding-top: 20vh;
+ padding-bottom: 30vh;
   width: 100%;
     
 }
 
-.about{
- margin: auto;
-}
+ 
 #about{
     
      font-size: 16px;
      background-color: #eee;
-     padding-top: 80px;
-     padding-bottom: 90px;
+     padding-top: 90px;
+  
      text-align: center;
      color: black;
 
@@ -191,8 +195,8 @@ canvas {
   
       font-size: 16px;
       background-color: #eee;
-     
-      padding-bottom: 90px;
+      padding-top: 90px;
+
       text-align: center;
       color: black;
  
@@ -212,6 +216,13 @@ canvas {
       height: 120vh;
       width: 100%;
         
+    }
+    
+    .logo{
+      top: 10%;
+    }
+    .logo img{
+      max-width: 320px;
     }
     .mail{
       text-align: center!important;
@@ -290,7 +301,7 @@ canvas {
       #Committees{
           background-color:#eee;
           text-align: center;
-          
+          padding-top: 90px;
       }
 
       
@@ -340,8 +351,15 @@ canvas {
 .card{
 
   margin-top: 50px;
+  align-content: center;
+  text-align: center;
 }
-
+.card-img-top{
+  padding: 16px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
 /*########### END #################*/
 
 footer{
@@ -367,7 +385,7 @@ footer{
 
 .links i{
 
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 
 .links i:hover{
@@ -379,8 +397,8 @@ footer{
 .links a{
 
   text-decoration: none;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   color: black;
   margin-bottom: 20px;
 }
